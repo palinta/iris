@@ -26,6 +26,7 @@ Rainbow rainbow(&strip);
 ColorManager colorManager(&strip);
 
 const char * IRIS_SETCOLOR_TOPIC = "palinta/iris/setColor";
+const char * IRIS_SETMODE_TOPIC = "palinta/iris/mode";
 const char * IRIS_SET_BRIGHTNESS_TOPIC = "palinta/iris/brightness";
 const char * IRIS_MQTT_CLIENT_NAME = "palinta-iris-client";
 

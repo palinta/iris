@@ -31,7 +31,7 @@ public:
             return;
         }
 
-        operationMode = RAINBOW;
+        SetOperationMode(RAINBOW);
         timer->start();
     }
     

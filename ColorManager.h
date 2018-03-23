@@ -85,7 +85,7 @@ public:
     int SetColor(String color) {
         uint8_t startIndex = 1;
         
-        operationMode = CONFIGURABLE_MODE;
+        SetOperationMode(CONFIGURABLE_MODE);
         // r
         uint8_t g = HEX(color[startIndex + 0]) * 16 + HEX(color[startIndex + 1]);
         // g
@@ -116,7 +116,7 @@ public:
             // We need at least  2 byte, an address and color id
             return -1;
         }
-        operationMode = CONFIGURABLE_MODE;
+        SetOperationMode(CONFIGURABLE_MODE);
         unsigned char id = colors[0];
         switch (id) {
             case 0: 

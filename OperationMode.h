@@ -10,5 +10,7 @@ enum OperationMode {
 
 OperationMode operationMode = RAINBOW;
 
+void SetOperationMode (OperationMode mode);
+
 #endif // OperationMode_h
 
